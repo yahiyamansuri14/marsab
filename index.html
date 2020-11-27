@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>
-			MarSab
+			
 		</title>
 			 <link rel="preconnect" href="https://fonts.gstatic.com">
 			 <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -13,11 +13,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<div class="container mt-3"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
-		$(window).load(function() {
-    		document.getElementById("student-worries").innerHTML="ASSIGNMENT DONE";
-  });
+		
+		function myFunction(){
+			var worries=["Grades","Assignments","Projects","Minor Project","Major Project"];
+								
+			}
+		}
+		 
+    		
 	</script>
 		<style>
 			*{
@@ -25,6 +30,7 @@
 			} 
 			body{
  		   font-family:'Open Sans Condensed';
+ 		   text-align: center;
 			}
 			#ceo-text{
 				font-size:30px;
@@ -36,9 +42,19 @@
 			#student-worries{
 
 			}
+			#first-container{
+				text-align: center;
+			}
+			#main-text{
+				font-size:30px;
+			}
 		</style>
 	</head>
-	<body>
+	<body onload="myFunction()">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="com-sm-8">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
   		<a class="navbar-brand" href="#">MARSAB</a>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -56,14 +72,22 @@
 	      			<a class="nav-link" href="#">30 Min Learning???</a>
 	    		</li>
 	    		<li class="nav-item">
+	      			<a class="nav-link" href="#">PRICING</a>
+	    		</li>
+	    		<li class="nav-item">
 	      			<a class="nav-link" href="#">CONTACT US</a>
 	    		</li>
   			</ul>
   		</div>
 	</nav>
-		<div class="container" style="margin:0;">
-			 <span class="display-4">Worried About&nbsp;&nbsp;<i style="color:#0040ff;" id="student-worries"></i></span>
+		<div class="container" style="margin:0;" id="first-container">
+			 <i><span class="display-4">Worried About&nbsp;&nbsp;<i style="color:#0040ff;" id="student-worries">Assignments</i></span></i><br>
+			 <span id="main-text">Try<b class="display-4">MarSab</b></span><br>
+			 <div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-outline-info" >Learn More</button>
+				</div>
 		</div>
+
 		<hr>
 		<div class="container" style="margin:0;">
 				<div class="container text-sm-center">
@@ -81,6 +105,10 @@
 					<button type="button" class="btn btn-outline-info" >Learn More</button>
 				</div>
 		</div>
+		</div>
+		<div class="col-sm-2"></div>
 		<hr>
+		</div>
+		</div>
 	</body>
 </html>
